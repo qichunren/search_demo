@@ -1,0 +1,8 @@
+<% if @posts && !@posts.blank? %>
+<% @posts.each do |post| %>
+  <h2><%= post.subject %></h2>
+  <p><%= post.content %></p>
+  <span><%= post.author %> - <%= post.created_at %></span>
+  <hr />
+<% end %>
+<% end %>
